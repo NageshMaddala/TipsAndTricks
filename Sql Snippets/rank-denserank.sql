@@ -15,5 +15,11 @@ SELECT
 	RankingWithDenseRank = DENSE_RANK() OVER(PARTITION BY SalesOrderID ORDER BY LineTotal DESC)
 
 FROM AdventureWorks2019.Sales.SalesOrderDetail
-
+WHERE SalesOrderID = 43659
 ORDER BY SalesOrderID, LineTotal DESC
+
+--Update Sales.SalesOrderDetail 
+--Set OrderQty = 1
+--where SalesOrderID = 43659 and SalesOrderDetailID = 7
+
+--select * from Sales.SalesOrderDetail where SalesOrderID = 43659 and SalesOrderDetailID = 7
