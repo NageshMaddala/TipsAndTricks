@@ -1,6 +1,6 @@
 /*
 CTE
-1. Make complex multi stage queries more managable
+1. Make complex multi stage queries more managable, it stores data in a virtual table
 2. It helps in simply the complex query
 3. Breaks complex code into simple sequential queries
 */
