@@ -102,7 +102,8 @@ UPDATE AdventureWorks2019.dbo.Calendar
 SET
 WeekendFlag = 
 	CASE
-		WHEN DayOfWeekNumber IN(1,7) THEN 1
+		--WHEN DayOfWeekNumber IN(1,7) THEN 1
+		WHEN DayOfWeekName IN('Saturday', 'Sunday') Then 1
 		ELSE 0
 	END
 
