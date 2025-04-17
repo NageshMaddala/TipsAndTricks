@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34601.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "DataFlowTraining", "DataFlowTraining.dtproj", "{5BC59DFB-F0B7-4EB3-A7D1-F934D505AC09}"
 EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "ControlFlowTraining", "..\ControlFlowTraining\ControlFlowTraining.dtproj", "{88DFB5FA-9B42-4262-A211-4B65EEA3BD79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
@@ -12,6 +14,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5BC59DFB-F0B7-4EB3-A7D1-F934D505AC09}.Development|Default.ActiveCfg = Development
 		{5BC59DFB-F0B7-4EB3-A7D1-F934D505AC09}.Development|Default.Build.0 = Development
+		{88DFB5FA-9B42-4262-A211-4B65EEA3BD79}.Development|Default.ActiveCfg = Development
+		{88DFB5FA-9B42-4262-A211-4B65EEA3BD79}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,34 +1,29 @@
 <?xml version="1.0"?>
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
-    <Name>DataFlowTraining</Name>
-    <LastWriteTime>2025-04-16T23:52:17.1563479Z</LastWriteTime>
+    <Name>ControlFlowTraining</Name>
+    <LastWriteTime>2025-04-17T00:33:47.6598285Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>ExportToFlatFile.dtsx</Name>
-      <LastWriteTime>2025-04-16T23:13:53.6408263Z</LastWriteTime>
+      <Name>BulkInsert.dtsx</Name>
+      <LastWriteTime>2025-04-17T00:02:57.1779354Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>CharacterMapping.dtsx</Name>
-      <LastWriteTime>2025-04-16T23:21:50.705047Z</LastWriteTime>
+      <Name>SequenceContainer.dtsx</Name>
+      <LastWriteTime>2025-04-17T00:09:10.0725258Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>CopyColumn.dtsx</Name>
-      <LastWriteTime>2025-04-16T23:25:58.2034854Z</LastWriteTime>
+      <Name>ExecutedProcessTask.dtsx</Name>
+      <LastWriteTime>2025-04-17T00:14:36.2066955Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>DerivedColumn.dtsx</Name>
-      <LastWriteTime>2025-04-16T23:31:05.3037848Z</LastWriteTime>
-      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
-      <Name>PercentageSampling.dtsx</Name>
-      <LastWriteTime>2025-04-16T23:51:18.7917268Z</LastWriteTime>
+      <Name>ForLoopContainer.dtsx</Name>
+      <LastWriteTime>2025-04-17T00:33:43.3967333Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
