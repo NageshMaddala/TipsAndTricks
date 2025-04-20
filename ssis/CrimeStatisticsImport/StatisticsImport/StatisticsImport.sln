@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "StatisticsImport", "StatisticsImport.dtproj", "{A711DDC9-54F0-46A7-A24E-317B96AD1E83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A711DDC9-54F0-46A7-A24E-317B96AD1E83}.Development|Default.ActiveCfg = Development
+		{A711DDC9-54F0-46A7-A24E-317B96AD1E83}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {736DC2B4-70BA-431E-8F3C-3F1165FF7228}
+	EndGlobalSection
+EndGlobal
