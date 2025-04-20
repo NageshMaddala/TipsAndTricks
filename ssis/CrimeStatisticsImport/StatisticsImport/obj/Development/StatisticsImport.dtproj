@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">NAGESH-LENOVO</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARgqioGLGFkiuKTSaHKi42gAAAAACAAAAAAAQZgAAAAEAACAAAAAtYJIp1Mbrzfzt3HiQ/zps85Q3vSeRMC23kKP2WbN4mwAAAAAOgAAAAAIAACAAAAAiXyrlvMPtlA4cnlCh4lil6XixvwlLsEDOWmteyHaQe5AAAADDP1G6EDRlgbtSxFvscNAeYTTdns5Z5TD5FXhrmYyFnHZGk5RDbufL37Dpn/jlORlW1k4vpL9JNvgQUM694MTCXhskaqbhxq+tS6g8DRRuaYgHbEKI15MmOsaEboD67UeuRMOWySDQOKMw9LsueNXHBUa2xYP4313srjJbovVMR1kAvxNSUG0lA5EhAlpMeQ9AAAAAgrdeArtTotAW6GmB+rJF0KCifEIdWn7ZgoPT+TE0dqhLTyyce+5JDRMbh9D55rFhPMb/chbNVR7p16QwfZ1hsQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAARgqioGLGFkiuKTSaHKi42gAAAAACAAAAAAAQZgAAAAEAACAAAACOdeASscUdU90nxQ0PYO/dyVFvw8XyZELvQl/cielAowAAAAAOgAAAAAIAACAAAADdtLbcVk3nMmz2qmMgxC98zOFb+Tp2vXxVEbp6tNR2WpAAAADI24Cs0PcpAl6+sR1xjcCs/nLPngqKJogkjGjFJ4Y9AXKDRcyRhb2IRXyfA/OzZlnG520782FqmwhhZj4xyUz5iAF1A00bn6rwOjJjOilPXmv6oJiI3Zu295SCExeM0R2R3C3iZma4+owIxNL+QkDa20B7tpRxpK/W55ayxNyUrwDkYVeXcYDAo2S2zg2Egh9AAAAAtNuu17B1jk3D/LK6DjF0fTChouZjJyL+6fgRnh5HrQM6PmBdtLf6q9CgfBoM/vXHeXaeZhZO0ucyAcHS6icJRQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,10 +42,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">66</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">77</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{CC6D65CA-5A19-44FC-BDA2-72833EBBB516}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{6A20B017-E647-4D24-BA51-C8869C7AD27D}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -110,21 +110,6 @@
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Value">false</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
-                  </SSIS:Properties>
-                </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.fileStreetCrime.ConnectionString">
-                  <SSIS:Properties>
-                    <SSIS:Property SSIS:Name="ID">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="CreationName">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="Description">
-                    </SSIS:Property>
-                    <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\Nagesh\github\TipsAndTricks\ssis\CrimeStatisticsImport\csv\2015-02-avon-and-somerset-street.csv</SSIS:Property>
-                    <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
                 <SSIS:Parameter SSIS:Name="CM.fileStreetCrime.DataRowsToSkip">

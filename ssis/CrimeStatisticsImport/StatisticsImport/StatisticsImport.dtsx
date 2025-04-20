@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="68"
-  DTS:VersionGUID="{04085EDA-2301-4A1F-ADA1-BDADC3792128}">
+  DTS:VersionBuild="77"
+  DTS:VersionGUID="{6A20B017-E647-4D24-BA51-C8869C7AD27D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -21,6 +21,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{B0AE2963-A538-4687-929A-C42BA298AD8F}"
       DTS:ObjectName="fileStreetCrime">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[$Project::ImportFolder] +  @[User::CurrentFileName]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -30,7 +32,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Nagesh\github\TipsAndTricks\ssis\CrimeStatisticsImport\csv\2015-02-avon-and-somerset-street.csv">
+          DTS:ConnectionString="D:\Nagesh\github\ssis excercise files\loading-data-ssis\03\demos\csv\">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +41,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Crime ID"
-              DTS:DTSID="{699834D7-3F3F-477F-91B6-A20389F79013}"
+              DTS:DTSID="{F1FFD324-1655-4A4F-8355-661EC1654A2C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +50,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Month"
-              DTS:DTSID="{24F6CB5E-898D-4210-8B90-D2484068D6D7}"
+              DTS:DTSID="{B05090B6-93F4-4BB8-A0A4-9E768E276AEA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +59,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Reported by"
-              DTS:DTSID="{FB62E300-393C-4970-8FBE-E34E23BEE4FF}"
+              DTS:DTSID="{E0007D90-36C2-44CE-9CF3-69DC1FFF4B84}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +68,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Falls within"
-              DTS:DTSID="{5CEEE29C-E9D0-4952-AE94-8DE6B52272E2}"
+              DTS:DTSID="{86F6F7E2-9684-4F0F-9DBD-9A0944F46C96}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +77,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Longitude"
-              DTS:DTSID="{9AF15734-1922-4545-AE12-EB0463C40C7E}"
+              DTS:DTSID="{C19095F2-DA56-4840-A77D-9E9DC5B8233A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +86,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Latitude"
-              DTS:DTSID="{302A7F5D-C0D6-4D84-8765-A5AAEDB5B226}"
+              DTS:DTSID="{55FBD5B4-08C0-4897-9315-F07E217B4C12}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +95,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Location"
-              DTS:DTSID="{C02103DA-B6E7-4AD3-A16F-76BC39ADA01B}"
+              DTS:DTSID="{FCB09E52-E2CB-4796-B86A-961AFC277070}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +104,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LSOA code"
-              DTS:DTSID="{7449F4E7-CF2C-40B0-BE3E-00CBA1FAA849}"
+              DTS:DTSID="{36979680-CE12-49B5-ADEA-711459EBD145}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +113,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="LSOA name"
-              DTS:DTSID="{8423F8DA-7C9B-4B18-A27C-93C505B80387}"
+              DTS:DTSID="{3FDD989D-EC09-446B-8D11-6A1B85C4F393}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +122,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Crime type"
-              DTS:DTSID="{AECE294A-BD8F-4A53-AA33-1CA66789CD71}"
+              DTS:DTSID="{C003C4D6-CB4D-4E11-AAE3-BAD518F55117}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +131,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Last outcome category"
-              DTS:DTSID="{47DFACE9-859F-4D70-9265-3CC0F495C640}"
+              DTS:DTSID="{E23FF3F0-0192-4D0E-B668-0BEBF63FF3A0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +140,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Context"
-              DTS:DTSID="{5FE54B89-1DB3-4CE8-BFBC-9F3928632663}"
+              DTS:DTSID="{15E31BA2-B9FD-4EF5-8549-77BAA4432E88}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -156,6 +158,16 @@
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
   <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{31C0969A-B5CD-4F1B-A68E-A6D3F294C2E9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="CurrentFileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{73FC7810-A6B8-4C8B-A484-F3065A73E334}"
@@ -820,16 +832,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</BinaryItem>
           DTS:IncludeInDebugDump="2345"
           DTS:Namespace="User"
           DTS:ObjectName="CurrentFileErrorDetail">
-          <DTS:VariableValue
-            DTS:DataType="8"
-            xml:space="preserve"></DTS:VariableValue>
-        </DTS:Variable>
-        <DTS:Variable
-          DTS:CreationName=""
-          DTS:DTSID="{8EE3995A-5D7F-4CD0-BC01-484EEF0A56CA}"
-          DTS:IncludeInDebugDump="2345"
-          DTS:Namespace="User"
-          DTS:ObjectName="CurrentFileName">
           <DTS:VariableValue
             DTS:DataType="8"
             xml:space="preserve"></DTS:VariableValue>
@@ -1504,6 +1506,25 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             </ScriptProject>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Process Each of the CSV File\Create Archive Folder"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{D3CE8AAA-9C61-4621-87F5-FD33E359B6BC}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Create Archive Folder"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="4">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="CreateDirectory"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="$Project::ImportArchiveFolder"
+              TaskIsSourceVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -2188,6 +2209,26 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                 SQLTask:DataType="11"
                 SQLTask:ParameterSize="-1" />
             </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Process Each of the CSV File\Move File To Archive Folder"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{CCB6A670-7AC0-4678-AAF8-B98AAEEEB925}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Move File To Archive Folder"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="4">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{B0AE2963-A538-4687-929A-C42BA298AD8F}"
+              TaskDestinationPath="$Project::ImportArchiveFolder"
+              TaskIsDestinationVariable="True" />
           </DTS:ObjectData>
         </DTS:Executable>
         <DTS:Executable
@@ -5059,6 +5100,31 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           DTS:LogicalAnd="True"
           DTS:ObjectName="Constraint 6"
           DTS:To="Package\Process Each of the CSV File\Send Email Report" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 7]"
+          DTS:CreationName=""
+          DTS:DTSID="{B24B2C39-E022-440F-B093-1F7301E541BC}"
+          DTS:From="Package\Process Each of the CSV File\Process File"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 7"
+          DTS:To="Package\Process Each of the CSV File\Set Status To Failed"
+          DTS:Value="1" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 8]"
+          DTS:CreationName=""
+          DTS:DTSID="{687A4FC5-A808-4336-9DA6-847A5AF50513}"
+          DTS:From="Package\Process Each of the CSV File\Update Import History"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 8"
+          DTS:To="Package\Process Each of the CSV File\Create Archive Folder" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 9]"
+          DTS:CreationName=""
+          DTS:DTSID="{C1E6C204-8EA0-4AF9-A189-E87C1D822332}"
+          DTS:From="Package\Process Each of the CSV File\Create Archive Folder"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 9"
+          DTS:To="Package\Process Each of the CSV File\Move File To Archive Folder" />
       </DTS:PrecedenceConstraints>
       <DTS:ForEachVariableMappings>
         <DTS:ForEachVariableMapping
@@ -5104,21 +5170,33 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
         <NodeLayout
           Size="140,42"
           Id="Package\Process Each of the CSV File\Process File"
-          TopLeft="216,137" />
+          TopLeft="216,136" />
         <EdgeLayout
           Id="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint]"
-          TopLeft="286.75,65.5">
+          TopLeft="258.166666666667,65.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,71.5"
+              EndConnector="27.8333333333333,70.5"
               Start="0,0"
-              End="0,64">
+              End="27.8333333333333,63">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,64" />
+                    End="0,24.5646551724138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,24.5646551724138"
+                    Point2="0,28.5646551724138"
+                    Point3="4,28.5646551724138" />
+                  <mssgle:LineSegment
+                    End="23.8333333333333,28.5646551724138" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.8333333333333,28.5646551724138"
+                    Point2="27.8333333333333,28.5646551724138"
+                    Point3="27.8333333333333,32.5646551724138" />
+                  <mssgle:LineSegment
+                    End="27.8333333333333,63" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5173,18 +5251,18 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           TopLeft="189.5,285.5" />
         <EdgeLayout
           Id="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 2]"
-          TopLeft="288.25,179">
+          TopLeft="288.25,178">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,106.5"
+              EndConnector="0,107.5"
               Start="0,0"
-              End="0,99">
+              End="0,100">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,99" />
+                    End="0,100" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5329,11 +5407,123 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 7]"
+          TopLeft="308,178">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="267.666666666667,109"
+              Start="0,0"
+              End="267.666666666667,101.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,50.6620754421662" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,50.6620754421662"
+                    Point2="0,54.6620754421662"
+                    Point3="4,54.6620754421662" />
+                  <mssgle:LineSegment
+                    End="263.666666666667,54.6620754421662" />
+                  <mssgle:CubicBezierSegment
+                    Point1="263.666666666667,54.6620754421662"
+                    Point2="267.666666666667,54.6620754421662"
+                    Point3="267.666666666667,58.6620754421662" />
+                  <mssgle:LineSegment
+                    End="267.666666666667,101.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="118.591985677083,59.6620754421662,30.4826953125,9.7490234375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="186,42"
+          Id="Package\Process Each of the CSV File\Create Archive Folder"
+          TopLeft="585,444" />
+        <EdgeLayout
+          Id="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 8]"
+          TopLeft="537.5,405.115658362989">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="47.5,59.8843416370107"
+              Start="0,0"
+              End="40,59.8843416370107">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="19.75,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="19.75,0"
+                    Point2="23.75,0"
+                    Point3="23.75,4" />
+                  <mssgle:LineSegment
+                    End="23.75,55.8843416370107" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.75,55.8843416370107"
+                    Point2="23.75,59.8843416370107"
+                    Point3="27.75,59.8843416370107" />
+                  <mssgle:LineSegment
+                    End="40,59.8843416370107" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="216,42"
+          Id="Package\Process Each of the CSV File\Move File To Archive Folder"
+          TopLeft="536,523" />
+        <EdgeLayout
+          Id="Package\Process Each of the CSV File.PrecedenceConstraints[Constraint 9]"
+          TopLeft="678,486">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-34,37"
+              Start="0,0"
+              End="-34,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.5"
+                    Point2="0,18.5"
+                    Point3="-4,18.5" />
+                  <mssgle:LineSegment
+                    End="-30,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-30,18.5"
+                    Point2="-34,18.5"
+                    Point3="-34,22.5" />
+                  <mssgle:LineSegment
+                    End="-34,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <ContainerLayout
           HeaderHeight="43"
           IsExpanded="True"
-          PanelSize="849,561"
-          Size="849,604"
+          PanelSize="849,620"
+          Size="849,663"
           Id="Package\Process Each of the CSV File"
           TopLeft="183.5,9.5" />
         <NodeLayout
@@ -5342,13 +5532,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
           TopLeft="1130,200" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="1032.5,311.5">
+          TopLeft="1032.5,341">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="97.5,-90.5"
+              EndConnector="97.5,-120"
               Start="0,0"
-              End="90,-90.5">
+              End="90,-120">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -5359,13 +5549,13 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</BinaryItem>
                     Point2="48.75,0"
                     Point3="48.75,-4" />
                   <mssgle:LineSegment
-                    End="48.75,-86.5" />
+                    End="48.75,-116" />
                   <mssgle:CubicBezierSegment
-                    Point1="48.75,-86.5"
-                    Point2="48.75,-90.5"
-                    Point3="52.75,-90.5" />
+                    Point1="48.75,-116"
+                    Point2="48.75,-120"
+                    Point3="52.75,-120" />
                   <mssgle:LineSegment
-                    End="90,-90.5" />
+                    End="90,-120" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
