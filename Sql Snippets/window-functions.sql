@@ -26,7 +26,10 @@ Group by
 SalesPersonID
 
 -- Window Functions
+-- Syntax: Some Aggregate Function() + Over()
 -- Over() keyword is window function
+-- Arguments of Over() are optional
+-- Perform aggregate function on all rows without modifying the output
 -- 4. Sales Person YTD sales along with all records
 -- no need of grouping or other things
 Select

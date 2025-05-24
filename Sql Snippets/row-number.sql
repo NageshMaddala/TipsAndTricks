@@ -31,3 +31,20 @@ ProductIDLineTotal = Sum(LineTotal) Over(Partition by SalesOrderId),
 Ranking = ROW_NUMBER() Over(order by linetotal desc)
 From Sales.SalesOrderDetail
 
+Select 
+[ProductName] = PP.Name,
+[ListPrice] = PP.ListPrice,
+[ProductSubCategory] = PPS.Name,
+[ProductCategory] = PPC.Name,
+[Price Rank] = ROW_NUMBER() Over(order by PP.ListPrice desc),
+[Category Price Rank] = ROW_NUMBER() Over(partition by PPC.Name order by PP.ListPrice desc),
+[Top 5 Price In Category] =
+	CASE
+		WHEN ROW_NUMBER() Over(partition by PPC.Name order by PP.ListPrice desc) <= 5 THEN 'Yes'
+		ELSE 'No'
+	END
+FROM Production.Product PP
+INNER JOIN Production.ProductSubcategory PPS 
+	ON PP.ProductSubcategoryID = PPS.ProductSubcategoryID
+INNER JOIN Production.ProductCategory PPC 
+	ON PPS.ProductCategoryID = PPC.ProductCategoryID
