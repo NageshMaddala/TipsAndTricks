@@ -1,0 +1,91 @@
+1. Json server is an npm package that lets you create fake rest apis with zero coding
+2. To quickly prototype front end components
+3. APIs support all upsert operations
+4. This is save a lot of time in prototyping
+5. Here are the list of operations supported by json-server:
+    a. Quering a list of items
+    b. Quering by id
+    c. Filtering
+    d. Sorting
+    e. Pagination
+    f. Quering with operations
+    g. Quering by full text search
+    h. Querying parent or child entities
+    i. Making post, put or delete requests
+    k. Configuration support
+
+Steps:
+1. Below command creates a package.json file
+npm init -y
+
+2. Below command add json server to the package
+npm install json-server
+
+3. Add below script to watch the file
+"serve-json": "json-server --watch db.json --port 3000"
+
+Get Request:
+
+http://localhost:3000/products
+http://localhost:3000/reviews
+
+http://localhost:3000/products/1
+http://localhost:3000/products/5
+
+http://localhost:3000/reviews/1
+
+Filtering:
+
+http://localhost:3000/products?category=electronics
+http://localhost:3000/products?category=electronics&inStock=true
+
+http://localhost:3000/products?category=electronics&discount.type=noshipping
+http://localhost:3000/products?category=electronics&discount.type=shipping
+
+Sorting:
+http://localhost:3000/products?_sort=price
+http://localhost:3000/products?_sort=name
+
+-- below doesn't work
+http://localhost:3000/products?_sort=price&_order=desc 
+
+Pagination:
+
+http://localhost:3000/products?_page=1&_limit=2
+
+Below doesn't work
+http://localhost:3000/products?_page=1&_limit=3
+
+Operators:
+Greater than and less than
+http://localhost:3000/products?price_gte=100
+
+http://localhost:3000/products?price_gte=100&price_lte=200
+
+Not Equal to
+http://localhost:3000/products?id_ne=1
+
+Like operator: doesn't work
+http://localhost:3000/products?category_like=^A
+
+Full Text search:
+Doesn't work
+
+http://localhost:3000/products?q=ele
+
+Relationships:
+Get us the matching children too
+All the products + related reviews in the same object with relation ship
+
+http://localhost:3000/products?_embed=reviews
+-- Below doesn't work
+http://localhost:3000/products/1?_embed=reviews
+http://localhost:3000/reviews?_expand=product
+
+-- This works
+http://localhost:3000/reviews?_embed=product 
+
+
+Generate Random Data
+
+
